@@ -1,0 +1,29 @@
+# Lottie Animation Licenses
+
+This directory contains Lottie (.json) animations.
+Each animation must have its license verified and documented in manifest.json.
+
+## Sources
+
+1. **LottieFiles** — Via MCP or lottiefiles.com
+   - Free animations: Check license per animation
+   - LottieFiles Free License: Typically free for commercial with attribution
+   - Premium: Requires subscription
+
+2. **Custom/Created** — Animations you build in After Effects + Bodymovin
+   - Full ownership, no restrictions
+
+## Adding Lottie Animations
+
+1. Download .json file
+2. Place in this directory
+3. Add entry to manifest.json with:
+   - path, source URL, author, license
+   - use: "final" or "reference-only"
+4. Test in renderer (file size < 500KB recommended)
+
+## Performance Notes
+
+- Keep files < 500KB for smooth rendering
+- Avoid complex expressions or unsupported features
+- Test with `python -c "import json; print(len(json.load(open('file.json'))))"`

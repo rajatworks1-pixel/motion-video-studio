@@ -1,0 +1,53 @@
+# Voiceover Licenses
+
+This directory contains the final voiceover audio.
+The VO is the timing backbone of the entire video — all beats, captions, and edits derive from it.
+
+## Source
+
+**ElevenLabs.io** — User-generated on the platform
+- Model: Eleven v3 (or v4) for expressive VO
+- Voice: Deep calm male narrator, documentary style, American
+- Settings: Stability 40-50%, Similarity 75%, Style 0-20%, Speed 1.0, Speaker boost on
+- Export: MP3 44.1kHz 192kbps (mp3_44100_192)
+
+## Workflow (Skill §10)
+
+1. **Agent writes paste-ready script** with AV two-column + ElevenLabs block
+2. **User generates MP3** on elevenlabs.io (2-3 takes, pick best)
+3. **User places MP3** at `assets/vo/vo_final.mp3`
+4. **Agent runs VO intake** (Colab):
+   - ffprobe (duration, sample rate)
+   - volumedetect + ebur128 (clipping/loudness check)
+   - faster-whisper transcription with word timestamps
+   - Diff vs approved script → report issues
+   - Lock beats.json timings to real audio
+5. **Render uses actual VO** — never the script text
+
+## File Requirements
+
+- **Filename:** `vo_final.mp3` (versioned as `vo_final_v2.mp3` for retakes)
+- **Format:** MP3, 44.1kHz, 192kbps, stereo or mono
+- **Duration:** Match script target (±2s)
+- **Quality:** No clipping, -18 to -23 LUFS (will be normalized in mix)
+- **Naming:** Single file for whole script, or per-section if marked in script
+
+## Retakes
+
+If a line sounds wrong:
+1. Regenerate ONLY that line on ElevenLabs (same settings)
+2. Save as `assets/vo/vo_lineXX_fix.mp3`
+3. Agent splices on a pause (breath boundary)
+
+## License
+
+- ElevenLabs output: Covered by your subscription/commercial license
+- Log voice + settings in manifest.json for reproducibility
+- **Never use unlicensed or AI-generated voices without commercial rights**
+
+## Critical Rule
+
+**Nothing gets built before the real VO MP3 arrives.**
+- All scene timing, caption sync, beat markers depend on actual audio
+- Guide tracks allowed ONLY if explicitly requested (marked `TEMP` in PROGRESS.md)
+- Final render always uses user-approved VO

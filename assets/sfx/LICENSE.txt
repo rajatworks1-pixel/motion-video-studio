@@ -1,0 +1,48 @@
+# Sound Effect Licenses
+
+This directory contains sound effects (SFX) — whooshes, clicks, pops, impacts, etc.
+Each SFX must have its license verified and documented in manifest.json.
+
+## Sources (Priority Order)
+
+1. **Freesound.org** — Via API or web
+   - Filter: `license:"Creative Commons 0"` (CC0 preferred)
+   - CC-BY: Attribution required (log author + URL)
+   - CC-BY-NC: Non-commercial only — avoid for commercial projects
+
+2. **ElevenLabs SFX Generation** — Via API
+   - Generated SFX: ElevenLabs license (commercial with subscription)
+   - Log generation prompt in manifest
+
+3. **Custom/Recorded** — Your own recordings
+   - Full ownership
+
+## Adding SFX
+
+1. Download .wav (preferred) or .mp3
+2. Place in this directory with descriptive name (e.g., `whoosh_transition.wav`)
+3. Add entry to manifest.json with:
+   - path, source URL, author, license
+   - duration (seconds)
+   - use: "final"
+4. Run `python scripts/fetch_assets.py --category sfx`
+
+## Technical Requirements
+
+- Format: 44.1kHz or 48kHz, 16-bit or 24-bit WAV
+- Duration: Typically 0.1s - 3s
+- Normalize: -3dB to -6dB peak (prevent clipping when layered)
+- Naming: `{type}_{description}.wav` (e.g., `impact_heavy.wav`, `ui_click_soft.wav`)
+
+## Common SFX Types for This Project
+
+| Type | Examples | Use Case |
+|------|----------|----------|
+| Riser | `riser_subtle.wav` | Build before reveal |
+| Impact | `impact_hit.wav` | Big hit/logo |
+| Whoosh | `whoosh_fast.wav` | Transitions, text fly-in |
+| UI | `ui_click.wav`, `ui_tick.wav` | Interface sounds |
+| Pop | `card_pop.wav` | Card appearances |
+| Button | `button_click.wav` | CTA interactions |
+
+**Prefer CC0. Log all attributions in manifest.json.**

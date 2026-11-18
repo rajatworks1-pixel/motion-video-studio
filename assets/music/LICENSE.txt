@@ -1,0 +1,47 @@
+# Music Licenses
+
+This directory contains background music tracks.
+Each track must have its license verified and documented in manifest.json.
+
+## Sources (Priority Order)
+
+1. **ElevenLabs Music Generation** — Via API
+   - Generated tracks: ElevenLabs license (commercial with subscription)
+   - Log generation prompt + settings in manifest
+
+2. **Freesound.org** — Music/ambience section
+   - Filter: `license:"Creative Commons 0"` or CC-BY
+   - Check duration (need full-track length)
+
+3. **Custom/Commissioned** — Your own or hired composer
+   - Full ownership with written agreement
+
+## Adding Music
+
+1. Download .mp3 or .wav (full track)
+2. Place in this directory
+3. Add entry to manifest.json with:
+   - path, source URL, author, license
+   - duration (seconds)
+   - use: "final"
+4. Run `python scripts/fetch_assets.py --category music`
+
+## Technical Requirements
+
+- Format: 44.1kHz or 48kHz, MP3 192kbps+ or WAV
+- Length: Must cover full video duration (loopable preferred)
+- Loudness: Pre-mastered to ~-18 LUFS (will be ducked under VO)
+- Structure: Seamless loop point if possible
+
+## Mixing Guidelines (from skill §9)
+
+- VO: 10-15 dB above music
+- Duck music under VO (sidechain or volume automation)
+- Music edits on bar lines
+- Final loudnorm: -14 LUFS integrated, -1.5 dBTP
+
+## For This Project
+
+- Target: Minimal ambient bed with sub pulses (~0.33s interval)
+- Style: Professional, unobtrusive, tech/SaaS appropriate
+- Duration: 60s+ (covers full video with padding)

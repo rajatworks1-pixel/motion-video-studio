@@ -1,0 +1,27 @@
+# Core rendering dependencies
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Playwright for headless Chrome rendering
+playwright>=1.40.0
+
+# Audio processing
+ffmpeg-python>=0.2.0
+
+# AI/ML models (CPU versions for Colab free tier)
+faster-whisper>=1.0.0
+demucs>=4.0.0
+
+# PyTorch CPU (Colab will upgrade to CUDA if GPU available)
+torch>=2.1.0 --index-url https://download.pytorch.org/whl/cpu
+torchaudio>=2.1.0 --index-url https://download.pytorch.org/whl/cpu
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# Optional: for advanced video processing
+# opencv-python-headless>=4.8.0
+# scenedetect>=0.6.0

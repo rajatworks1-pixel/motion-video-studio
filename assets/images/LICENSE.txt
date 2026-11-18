@@ -1,0 +1,39 @@
+# Image Licenses
+
+This directory contains image assets (photos, textures, backgrounds).
+Each image must have its license verified and documented in manifest.json.
+
+## Sources (Priority Order)
+
+1. **API MCPs (Preferred)** — Clear licenses, tracked automatically
+   - Pexels (Pexels Free License)
+   - Pixabay (Pixabay License - free commercial)
+   - Unsplash (Unsplash License)
+
+2. **Free License Sites** — Browse visually, verify per-image
+   - textures.com (Free section)
+   - Brand press kits
+   - Your own assets
+
+3. **Reference Only** — Pinterest, Behance, Dribbble
+   - Mark `"use": "reference-only"` in manifest
+   - Use for style matching only
+   - Recreate look in code for final
+
+## Adding Images
+
+1. Download image (prefer original resolution)
+2. Place in this directory with descriptive name
+3. Add entry to manifest.json with:
+   - path, source URL, author, license
+   - use: "final" or "reference-only"
+4. Run `python scripts/fetch_assets.py --category images`
+
+## License Requirements
+
+- **Pexels/Pixabay/Unsplash:** Free commercial, no attribution required (but credit appreciated)
+- **CC0:** Public domain, no restrictions
+- **CC-BY:** Attribution required (log author + URL in manifest)
+- **Custom:** Verify terms, get explicit permission if unsure
+
+**Never use watermarked, low-res, or unlicensed images in final render.**

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "project": "myproject",
+  "voFile": "assets/vo/vo_final.mp3",
+  "voDuration": 58.3,
+  "sampleRate": 44100,
+  "beats": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "end": 3.0,
+      "label": "Hook",
+      "voLine": 0,
+      "voText": "Nobody drew this. Not one line... not one frame.",
+      "keywords": ["NOBODY", "DREW", "THIS"],
+      "scene": "hook",
+      "visual": "Bold centered text on dark background",
+      "motion": "Text rises from below with ease-out-expo",
+      "sfx": ["subtle_riser"],
+      "transition": "cut"
+    },
+    {
+      "id": "problem",
+      "start": 3.0,
+      "end": 8.0,
+      "label": "Problem",
+      "voLine": 1,
+      "voText": "Most teams lose hours every week to manual work.",
+      "keywords": ["HOURS", "MANUAL WORK"],
+      "scene": "problem",
+      "visual": "Two lines of body text, secondary color",
+      "motion": "Fade in with ease-out-cubic",
+      "sfx": ["ui_tick"],
+      "transition": "cut"
+    },
+    {
+      "id": "solution",
+      "start": 8.0,
+      "end": 18.0,
+      "label": "Solution",
+      "voLine": 2,
+      "voText": "So where did it come from? ... Meet Flow.",
+      "keywords": ["FLOW"],
+      "scene": "solution",
+      "visual": "Gradient text 'Meet Flow.' scaling up",
+      "motion": "Scale 0.5->1 with ease-out-cubic, gradient fill",
+      "sfx": ["whoosh", "impact"],
+      "transition": "match_cut"
+    },
+    {
+      "id": "proof",
+      "start": 18.0,
+      "end": 30.0,
+      "label": "Proof",
+      "voLine": 3,
+      "voText": "Automated workflows. Real-time sync. Zero config. Three features that change everything.",
+      "keywords": ["AUTOMATED", "REAL-TIME", "ZERO CONFIG"],
+      "scene": "proof",
+      "visual": "Three feature cards in horizontal row",
+      "motion": "Staggered card pop-in (80ms stagger), ease-out-expo",
+      "sfx": ["card_pop", "card_pop", "card_pop"],
+      "transition": "cut"
+    },
+    {
+      "id": "cta",
+      "start": 30.0,
+      "end": 35.0,
+      "label": "CTA",
+      "voLine": 4,
+      "voText": "Start yours today — link below.",
+      "keywords": ["START", "TODAY"],
+      "scene": "cta",
+      "visual": "Gradient CTA button with text",
+      "motion": "Button rises, gradient shimmer",
+      "sfx": ["button_click"],
+      "transition": "cut"
+    },
+    {
+      "id": "outro",
+      "start": 35.0,
+      "end": 40.0,
+      "label": "Outro",
+      "voLine": 5,
+      "voText": "Flow. flow.example.com",
+      "keywords": ["FLOW"],
+      "scene": "outro",
+      "visual": "Logo + URL, minimal",
+      "motion": "Fade in, hold",
+      "sfx": [],
+      "transition": "fade_to_black"
+    }
+  ],
+  "transcript": {
+    "source": "faster-whisper",
+    "language": "en",
+    "wordTimestamps": true,
+    "verified": false
+  }
+}

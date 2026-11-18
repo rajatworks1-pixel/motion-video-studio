@@ -1,0 +1,78 @@
+# Environment & Secrets
+.env
+.env.*
+*.env
+.env.local
+.env.secrets
+.secrets/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Build Output
+renders/
+cache/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Temporary Files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# Model Weights (downloaded at runtime)
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Browser Profiles
+.browser-profile/
+cache/browser/
+
+# Colab Specific
+/content/
+drive/
+
+# Large Assets (tracked via manifest.json, not git)
+assets/fonts/*.woff2
+assets/fonts/*.ttf
+assets/images/*.jpg
+assets/images/*.png
+assets/images/*.webp
+assets/lottie/*.json
+assets/sfx/*.wav
+assets/sfx/*.mp3
+assets/music/*.mp3
+assets/vo/*.mp3
+assets/vo/*.wav
+
+# Keep directory structure but ignore contents
+!assets/fonts/.gitkeep
+!assets/images/.gitkeep
+!assets/lottie/.gitkeep
+!assets/sfx/.gitkeep
+!assets/music/.gitkeep
+!assets/vo/.gitkeep
+!renders/previews/.gitkeep
+!renders/final/.gitkeep
+!cache/.gitkeep
+!models/.gitkeep

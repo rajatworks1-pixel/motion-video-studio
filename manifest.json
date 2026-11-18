@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "project": "myproject",
+  "created": "2026-11-18T00:00:00Z",
+  "updated": "2026-11-18T00:00:00Z",
+  "aspect": "9:16",
+  "resolution": [1080, 1920],
+  "fps": 30,
+  "duration": 60,
+  "assets": {
+    "fonts": [
+      {
+        "path": "assets/fonts/Satoshi-Bold.woff2",
+        "name": "Satoshi Bold",
+        "source": "https://www.fontshare.com/fonts/satoshi",
+        "license": "ITF Free",
+        "licenseUrl": "https://www.fontshare.com/license",
+        "author": "Indian Type Foundry",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/Satoshi-Regular.woff2",
+        "name": "Satoshi Regular",
+        "source": "https://www.fontshare.com/fonts/satoshi",
+        "license": "ITF Free",
+        "licenseUrl": "https://www.fontshare.com/license",
+        "author": "Indian Type Foundry",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/Inter-Bold.woff2",
+        "name": "Inter Bold",
+        "source": "https://github.com/rsms/inter",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Rasmus Andersson",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/Inter-Regular.woff2",
+        "name": "Inter Regular",
+        "source": "https://github.com/rsms/inter",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Rasmus Andersson",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/Inter-Light.woff2",
+        "name": "Inter Light",
+        "source": "https://github.com/rsms/inter",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Rasmus Andersson",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/CaveatBrush-Regular.ttf",
+        "name": "Caveat Brush Regular",
+        "source": "https://fonts.google.com/specimen/Caveat+Brush",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Pablo Impallari",
+        "use": "final",
+        "verified": false
+      }
+    ],
+    "images": [],
+    "lottie": [],
+    "sfx": [
+      {
+        "path": "assets/sfx/subtle_riser.wav",
+        "name": "Subtle Riser",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 2.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/ui_tick.wav",
+        "name": "UI Tick",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.3,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/whoosh.wav",
+        "name": "Whoosh Transition",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.8,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/impact.wav",
+        "name": "Impact Hit",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.5,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/card_pop.wav",
+        "name": "Card Pop",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.2,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/button_click.wav",
+        "name": "Button Click",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.15,
+        "verified": false
+      }
+    ],
+    "music": [
+      {
+        "path": "assets/music/bed.mp3",
+        "name": "Ambient Bed",
+        "source": "elevenlabs.io (generated)",
+        "license": "ElevenLabs",
+        "licenseUrl": "https://elevenlabs.io/terms",
+        "author": "ElevenLabs",
+        "use": "final",
+        "duration": 60.0,
+        "verified": false
+      }
+    ],
+    "vo": {
+      "path": "assets/vo/vo_final.mp3",
+      "name": "Final Voiceover",
+      "source": "elevenlabs.io (user-generated)",
+      "license": "ElevenLabs",
+      "licenseUrl": "https://elevenlabs.io/terms",
+      "author": "User (ElevenLabs voice)",
+      "use": "final",
+      "duration": 58.3,
+      "sampleRate": 44100,
+      "verified": false
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "canvas": "^2.11.0",
+      "commander": "^11.0.0"
+    },
+    "python": {
+      "pillow": ">=10.0.0",
+      "numpy": ">=1.24.0",
+      "playwright": ">=1.40.0",
+      "faster-whisper": ">=1.0.0",
+      "demucs": ">=4.0.0",
+      "torch": "cpu",
+      "torchaudio": "cpu",
+      "ffmpeg-python": ">=0.2.0",
+      "requests": ">=2.31.0",
+      "tqdm": ">=4.66.0",
+      "python-dotenv": ">=1.0.0"
+    }
+  },
+  "colab": {
+    "gpu": true,
+    "preferredGpu": "T4",
+    "runtimeMinutes": 30,
+    "driveFolder": "MyDrive/myproject",
+    "chunkedRender": true,
+    "maxChunkDuration": 120
+  },
+  "render": {
+    "final": {
+      "fps": 30,
+      "scale": 1.0,
+      "crf": 18,
+      "preset": "slow",
+      "pixFmt": "yuv420p",
+      "audioCodec": "aac",
+      "audioBitrate": "192k",
+      "audioSampleRate": 48000,
+      "loudnorm": {
+        "I": -14,
+        "TP": -1.5,
+        "LRA": 11
+      }
+    },
+    "preview": {
+      "fps": 8,
+      "scale": 0.25,
+      "crf": 28,
+      "preset": "veryfast",
+      "pixFmt": "yuv420p",
+      "audioCodec": "aac",
+      "audioBitrate": "128k",
+      "audioSampleRate": 44100
+    }
+  }
+}

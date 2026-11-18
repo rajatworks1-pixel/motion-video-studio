@@ -1,20 +1,20 @@
-# PROJECT — myproject
+# PROJECT — Earth Stopped Spinning
 
 ## Brief
 
-**Goal:** Create a 40-second SaaS product explainer video for "Flow" — an automated workflow tool.
+**Goal:** Create a 60-second cinematic 2D animation exploring "What If Earth Suddenly Stopped Spinning?"
 
-**Audience:** Technical decision-makers, developers, startup founders (B2B SaaS)
+**Audience:** Science-curious viewers, documentary fans, educational content consumers
 
-**Platform:** Social media (9:16 vertical), website embed (16:9 horizontal)
+**Platform:** YouTube (16:9 horizontal), social media clips
 
-**Format:** 9:16 primary (1080×1920), 16:9 secondary (1920×1080)
+**Format:** 16:9 primary (1920×1080), cinematic 2D animation
 
-**Duration:** 40 seconds (VO: ~35s + 5s outro hold)
+**Duration:** 60 seconds (VO: ~55s + 5s outro hold)
 
-**Tone:** Professional, confident, clarity-first (intensity 2)
+**Tone:** Dramatic, atmospheric, scientific wonder (intensity 3-4)
 
-**CTA:** "Start Free Today" → flow.example.com
+**CTA:** "Subscribe for more What If scenarios" → channel link
 
 ---
 
@@ -22,23 +22,25 @@
 
 | Asset | Status | Details |
 |-------|--------|---------|
-| Logo | ⬜ Pending | SVG needed |
-| Color Palette | ✅ Defined | Primary #0a0a0a, Accent #ff6a1a, Gradient #ff6a1a→#ffaa00 |
-| Fonts | ✅ Selected | Satoshi (headlines), Inter (body), Caveat Brush (accent) |
-| Voiceover | ⬜ Pending | ElevenLabs v3, deep calm male narrator |
+| Logo | ⬜ Pending | Channel logo SVG needed |
+| Color Palette | ✅ Defined | Deep space #0a0a1a, Earth blue #1e5f9e, Accent gold #e8a838, Atmosphere teal #00b4d8, Danger red #c0392b |
+| Fonts | ⬜ Pending | Cinzel (titles), Libre Baskerville (body), Space Mono (data/labels) |
+| Voiceover | ⬜ Pending | ElevenLabs v3, deep dramatic male narrator (documentary style) |
 
 ---
 
-## Video Structure (Hook → Problem → Solution → Proof → CTA)
+## Video Structure (8 Scenes - Hook → Catastrophe → Atmosphere → Oceans → Temperature → Life → Aftermath → Outro)
 
 | Beat | Time | VO Line | Visual Concept | Keywords |
 |------|------|---------|----------------|----------|
-| Hook | 0-3s | "Nobody drew this. Not one line... not one frame." | Bold centered text rise | NOBODY, DREW, THIS |
-| Problem | 3-8s | "Most teams lose hours every week to manual work." | Two-line body text fade | HOURS, MANUAL WORK |
-| Solution | 8-18s | "So where did it come from? ... Meet Flow." | Gradient "Meet Flow." scale up | FLOW |
-| Proof | 18-30s | "Automated workflows. Real-time sync. Zero config." | 3 feature cards stagger pop | AUTOMATED, REAL-TIME, ZERO CONFIG |
-| CTA | 30-35s | "Start yours today — link below." | Gradient button rise | START, TODAY |
-| Outro | 35-40s | "Flow. flow.example.com" | Logo + URL fade in | FLOW |
+| 1. Hook | 0-5s | "What if Earth suddenly stopped spinning?" | Earth in space, slow rotation, then FREEZE frame | EARTH, STOPPED, SPINNING |
+| 2. Day/Night | 5-12s | "One side burns in eternal day. The other freezes in endless night." | Split screen: scorching day / frozen night | BURNS, FREEZES, ETERNAL |
+| 3. Atmosphere | 12-20s | "The atmosphere keeps moving. Supersonic winds scour the surface." | Wind arrows, shockwaves, debris flying | ATMOSPHERE, SUPERSONIC, SCOUR |
+| 4. Oceans | 20-28s | "Oceans surge toward the poles. Equatorial lands rise from the depths." | Water rushing poleward, land emerging | OCEANS, SURGE, POLES |
+| 5. Magnetic | 28-36s | "The magnetic field collapses. Radiation strips the air away." | Magnetic field lines fading, particles hitting atmosphere | MAGNETIC, COLLAPSES, RADIATION |
+| 6. Temperature | 36-44s | "Extremes beyond survival. 100°C day. -100°C night." | Thermometer graphics, extreme values | EXTREMES, SURVIVAL |
+| 7. Life | 44-52s | "Only extremophiles endure. Deep underground. Deep ocean vents." | Microscopic life, hydrothermal vents | EXTREMOPHILES, ENDURE |
+| 8. Outro | 52-60s | "Earth stops. Life finds a way. What If... continues." | Earth slowly fading, channel logo, subscribe | EARTH, LIFE, SUBSCRIBE |
 
 ---
 
@@ -52,16 +54,17 @@
 | Chunking | 2-min chunks, auto-concat | Survives Colab disconnects |
 | Font Loading | Local .woff2 via Pillow | No web font dependency |
 | Audio Mix | VO + music bed + SFX per beat | Sync to transcript timestamps |
+| Aspect Ratio | 16:9 (1920×1080) | Cinematic horizontal format |
 
 ---
 
 ## Open Questions
 
-- [ ] Finalize logo SVG
-- [ ] Choose ElevenLabs voice (test 3 options)
-- [ ] Source background music (ElevenLabs vs Freesound)
-- [ ] Decide on 16:9 version (native re-layout or skip)
-- [ ] Confirm feature card copy with product team
+- [ ] Finalize channel logo SVG
+- [ ] Choose ElevenLabs voice (test 3 documentary voices)
+- [ ] Source background music (cinematic ambient, Freesound/ElevenLabs)
+- [ ] Decide on vertical 9:16 cut (native re-layout or skip)
+- [ ] Verify scientific accuracy with sources
 
 ---
 
@@ -79,10 +82,10 @@
 
 ## References
 
-- Recipe C (SaaS launch, intensity 2-3) from skill §14
-- Reference: Slack launch video (clarity-first, 2D→3D pop)
-- Music: Minimal ambient bed, sub pulses ~0.33s
-- SFX: UI ticks, whoosh, impact, card pops, button click
+- Recipe B (Cinematic storyteller, intensity 5) from skill §14
+- Reference: Kurzgesagt / What If / PBS Space Time style
+- Music: Dark ambient, low drones, tension-building
+- SFX: Wind howls, magnetic hum, water rush, Geiger counter, deep impacts
 
 ---
 

@@ -1,111 +1,132 @@
 {
   "version": 1,
-  "project": "myproject",
+  "project": "earth-stopped-spinning",
   "created": "2026-11-18T00:00:00Z",
   "updated": "2026-11-18T00:00:00Z",
-  "aspect": "9:16",
-  "resolution": [1080, 1920],
+  "aspect": "16:9",
+  "resolution": [1920, 1080],
   "fps": 30,
   "duration": 60,
   "assets": {
     "fonts": [
       {
-        "path": "assets/fonts/Satoshi-Bold.woff2",
-        "name": "Satoshi Bold",
-        "source": "https://www.fontshare.com/fonts/satoshi",
-        "license": "ITF Free",
-        "licenseUrl": "https://www.fontshare.com/license",
-        "author": "Indian Type Foundry",
-        "use": "final",
-        "verified": false
-      },
-      {
-        "path": "assets/fonts/Satoshi-Regular.woff2",
-        "name": "Satoshi Regular",
-        "source": "https://www.fontshare.com/fonts/satoshi",
-        "license": "ITF Free",
-        "licenseUrl": "https://www.fontshare.com/license",
-        "author": "Indian Type Foundry",
-        "use": "final",
-        "verified": false
-      },
-      {
-        "path": "assets/fonts/Inter-Bold.woff2",
-        "name": "Inter Bold",
-        "source": "https://github.com/rsms/inter",
+        "path": "assets/fonts/Cinzel-Bold.woff2",
+        "name": "Cinzel Bold",
+        "source": "https://fonts.google.com/specimen/Cinzel",
         "license": "OFL",
         "licenseUrl": "https://scripts.sil.org/OFL",
-        "author": "Rasmus Andersson",
+        "author": "Natanael Gama",
         "use": "final",
         "verified": false
       },
       {
-        "path": "assets/fonts/Inter-Regular.woff2",
-        "name": "Inter Regular",
-        "source": "https://github.com/rsms/inter",
+        "path": "assets/fonts/Cinzel-Regular.woff2",
+        "name": "Cinzel Regular",
+        "source": "https://fonts.google.com/specimen/Cinzel",
         "license": "OFL",
         "licenseUrl": "https://scripts.sil.org/OFL",
-        "author": "Rasmus Andersson",
+        "author": "Natanael Gama",
         "use": "final",
         "verified": false
       },
       {
-        "path": "assets/fonts/Inter-Light.woff2",
-        "name": "Inter Light",
-        "source": "https://github.com/rsms/inter",
+        "path": "assets/fonts/LibreBaskerville-Regular.woff2",
+        "name": "Libre Baskerville Regular",
+        "source": "https://fonts.google.com/specimen/Libre+Baskerville",
         "license": "OFL",
         "licenseUrl": "https://scripts.sil.org/OFL",
-        "author": "Rasmus Andersson",
+        "author": "Impallari Type",
         "use": "final",
         "verified": false
       },
       {
-        "path": "assets/fonts/CaveatBrush-Regular.ttf",
-        "name": "Caveat Brush Regular",
-        "source": "https://fonts.google.com/specimen/Caveat+Brush",
+        "path": "assets/fonts/LibreBaskerville-Italic.woff2",
+        "name": "Libre Baskerville Italic",
+        "source": "https://fonts.google.com/specimen/Libre+Baskerville",
         "license": "OFL",
         "licenseUrl": "https://scripts.sil.org/OFL",
-        "author": "Pablo Impallari",
+        "author": "Impallari Type",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/LibreBaskerville-Bold.woff2",
+        "name": "Libre Baskerville Bold",
+        "source": "https://fonts.google.com/specimen/Libre+Baskerville",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Impallari Type",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/SpaceMono-Regular.woff2",
+        "name": "Space Mono Regular",
+        "source": "https://fonts.google.com/specimen/Space+Mono",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Colophon Foundry",
+        "use": "final",
+        "verified": false
+      },
+      {
+        "path": "assets/fonts/SpaceMono-Bold.woff2",
+        "name": "Space Mono Bold",
+        "source": "https://fonts.google.com/specimen/Space+Mono",
+        "license": "OFL",
+        "licenseUrl": "https://scripts.sil.org/OFL",
+        "author": "Colophon Foundry",
         "use": "final",
         "verified": false
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "path": "assets/images/starfield_1920x1080.jpg",
+        "name": "Starfield Background",
+        "source": "procedural / Pixabay (CC0)",
+        "license": "CC0 / Procedural",
+        "author": "Generated / Pixabay",
+        "use": "final",
+        "duration": 60.0,
+        "verified": false
+      },
+      {
+        "path": "assets/images/earth_texture_2k.jpg",
+        "name": "Earth Texture (2K)",
+        "source": "NASA Visible Earth / public domain",
+        "license": "Public Domain",
+        "author": "NASA",
+        "use": "final",
+        "duration": 60.0,
+        "verified": false
+      },
+      {
+        "path": "assets/images/channel_logo.svg",
+        "name": "Channel Logo",
+        "source": "Brand assets",
+        "license": "Custom",
+        "author": "Channel",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      }
+    ],
     "lottie": [],
     "sfx": [
       {
-        "path": "assets/sfx/subtle_riser.wav",
-        "name": "Subtle Riser",
+        "path": "assets/sfx/sub_drone.wav",
+        "name": "Sub Drone Base",
         "source": "freesound.org (CC0)",
         "license": "CC0",
         "author": "TBD",
         "use": "final",
-        "duration": 2.0,
+        "duration": 60.0,
         "verified": false
       },
       {
-        "path": "assets/sfx/ui_tick.wav",
-        "name": "UI Tick",
-        "source": "freesound.org (CC0)",
-        "license": "CC0",
-        "author": "TBD",
-        "use": "final",
-        "duration": 0.3,
-        "verified": false
-      },
-      {
-        "path": "assets/sfx/whoosh.wav",
-        "name": "Whoosh Transition",
-        "source": "freesound.org (CC0)",
-        "license": "CC0",
-        "author": "TBD",
-        "use": "final",
-        "duration": 0.8,
-        "verified": false
-      },
-      {
-        "path": "assets/sfx/impact.wav",
-        "name": "Impact Hit",
+        "path": "assets/sfx/magnetic_lock.wav",
+        "name": "Magnetic Lock Transient",
         "source": "freesound.org (CC0)",
         "license": "CC0",
         "author": "TBD",
@@ -114,13 +135,273 @@
         "verified": false
       },
       {
-        "path": "assets/sfx/card_pop.wav",
-        "name": "Card Pop",
+        "path": "assets/sfx/tension_riser.wav",
+        "name": "Tension Riser",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 4.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/solar_hum.wav",
+        "name": "Solar Hum",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 7.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/wind_howl.wav",
+        "name": "Wind Howl (Night Side)",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 7.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/ice_crack.wav",
+        "name": "Ice Crack",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 1.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/divider_chime.wav",
+        "name": "Gold Divider Chime",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.3,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/wind_roar.wav",
+        "name": "Wind Roar (Low)",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/wind_whistle.wav",
+        "name": "Wind Whistle (High)",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/shockwave_whoosh.wav",
+        "name": "Shockwave Whoosh",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.5,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/sub_impact.wav",
+        "name": "Sub Impact",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.3,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/water_rush_deep.wav",
+        "name": "Deep Water Rush",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/land_rumble.wav",
+        "name": "Land Rising Rumble",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 3.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/gold_chime.wav",
+        "name": "Gold Chime",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.5,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/em_hum_descending.wav",
+        "name": "EM Hum Descending",
+        "source": "freesound.org (CC0) / ElevenLabs generated",
+        "license": "CC0 / ElevenLabs",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/field_snap.wav",
+        "name": "Field Line Snap",
         "source": "freesound.org (CC0)",
         "license": "CC0",
         "author": "TBD",
         "use": "final",
         "duration": 0.2,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/geiger_clicks.wav",
+        "name": "Geiger Counter Clicks",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/strip_sizzle.wav",
+        "name": "Radiation Strip Sizzle",
+        "source": "freesound.org (CC0) / ElevenLabs generated",
+        "license": "CC0 / ElevenLabs",
+        "author": "TBD",
+        "use": "final",
+        "duration": 4.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/mercury_rise_tone.wav",
+        "name": "Mercury Rise Tone",
+        "source": "ElevenLabs generated",
+        "license": "ElevenLabs",
+        "author": "ElevenLabs",
+        "use": "final",
+        "duration": 3.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/mercury_fall_tone.wav",
+        "name": "Mercury Fall Tone",
+        "source": "ElevenLabs generated",
+        "license": "ElevenLabs",
+        "author": "ElevenLabs",
+        "use": "final",
+        "duration": 3.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/glass_crack.wav",
+        "name": "Glass Crack",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.3,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/frost_chimes.wav",
+        "name": "Frost Crystalline Chimes",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 2.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/sub_hit.wav",
+        "name": "Sub Hit",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.5,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/deep_ocean_rumble.wav",
+        "name": "Deep Ocean Ambience",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/vent_hiss.wav",
+        "name": "Hydrothermal Vent Hiss",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/microbe_clicks.wav",
+        "name": "Microbe Organic Clicks",
+        "source": "freesound.org (CC0) / ElevenLabs generated",
+        "license": "CC0 / ElevenLabs",
+        "author": "TBD",
+        "use": "final",
+        "duration": 4.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/major_chord_resolve.wav",
+        "name": "Major Chord Resolve",
+        "source": "ElevenLabs generated",
+        "license": "ElevenLabs",
+        "author": "ElevenLabs",
+        "use": "final",
+        "duration": 2.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/music_resolve_major.wav",
+        "name": "Music Bed Major Resolve",
+        "source": "ElevenLabs generated / Freesound",
+        "license": "ElevenLabs / CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 8.0,
+        "verified": false
+      },
+      {
+        "path": "assets/sfx/logo_whoom.wav",
+        "name": "Logo Impact Whoom",
+        "source": "freesound.org (CC0)",
+        "license": "CC0",
+        "author": "TBD",
+        "use": "final",
+        "duration": 0.5,
         "verified": false
       },
       {
@@ -132,16 +413,26 @@
         "use": "final",
         "duration": 0.15,
         "verified": false
+      },
+      {
+        "path": "assets/sfx/final_chord_hold.wav",
+        "name": "Final Chord Hold",
+        "source": "ElevenLabs generated",
+        "license": "ElevenLabs",
+        "author": "ElevenLabs",
+        "use": "final",
+        "duration": 4.0,
+        "verified": false
       }
     ],
     "music": [
       {
-        "path": "assets/music/bed.mp3",
-        "name": "Ambient Bed",
-        "source": "elevenlabs.io (generated)",
-        "license": "ElevenLabs",
+        "path": "assets/music/bed_dark_ambient.mp3",
+        "name": "Dark Ambient Bed (60s)",
+        "source": "ElevenLabs generated (music) / Freesound (CC0 ambient)",
+        "license": "ElevenLabs / CC0",
         "licenseUrl": "https://elevenlabs.io/terms",
-        "author": "ElevenLabs",
+        "author": "ElevenLabs / Freesound artist",
         "use": "final",
         "duration": 60.0,
         "verified": false
@@ -150,12 +441,12 @@
     "vo": {
       "path": "assets/vo/vo_final.mp3",
       "name": "Final Voiceover",
-      "source": "elevenlabs.io (user-generated)",
+      "source": "elevenlabs.io (user-generated from plan/vo_script.md)",
       "license": "ElevenLabs",
       "licenseUrl": "https://elevenlabs.io/terms",
-      "author": "User (ElevenLabs voice)",
+      "author": "User (ElevenLabs voice: Deep Documentary Male)",
       "use": "final",
-      "duration": 58.3,
+      "duration": 58.0,
       "sampleRate": 44100,
       "verified": false
     }
@@ -179,11 +470,11 @@
       "python-dotenv": ">=1.0.0"
     }
   },
-  "colab": {
+"colab": {
     "gpu": true,
     "preferredGpu": "T4",
     "runtimeMinutes": 30,
-    "driveFolder": "MyDrive/myproject",
+    "driveFolder": "MyDrive/earth-stopped-spinning",
     "chunkedRender": true,
     "maxChunkDuration": 120
   },

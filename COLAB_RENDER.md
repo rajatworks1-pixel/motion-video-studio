@@ -59,8 +59,8 @@ This system lets you **create videos on your Android phone** (planning, scriptin
 
 ```bash
 # On your computer/Android
-gh repo create myproject --private --clone
-cd myproject
+gh repo create earth-stopped-spinning --private --clone
+cd earth-stopped-spinning
 # Copy all project files here (this guide assumes you've done this)
 git add . && git commit -m "Initial commit" && git push
 ```
@@ -104,11 +104,11 @@ Click the **🔑 key icon** in the left sidebar → **Add new secret** for each:
 
 Run Cell 3. Should create:
 ```
-/content/drive/MyDrive/myproject/
-├── renders/
-│   ├── previews/
-│   └── final/
-```
+ /content/drive/MyDrive/earth-stopped-spinning/
+ ├── renders/
+ │   ├── previews/
+ │   └── final/
+ ```
 
 ---
 
@@ -261,8 +261,8 @@ For videos longer than 2 minutes, the renderer:
 ### Output Location
 
 ```
-Google Drive: /MyDrive/myproject/renders/final/myproject_v1.mp4
-Colab Temp:   /content/project/renders/final/myproject_v1.mp4
+Google Drive: /MyDrive/earth-stopped-spinning/renders/final/earth-stopped-spinning_v1.mp4
+Colab Temp:   /content/project/renders/final/earth-stopped-spinning_v1.mp4
 ```
 
 **Versioning:** Auto-increments (v1, v2, v3...) — never overwrites.
